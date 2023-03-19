@@ -42,4 +42,4 @@ year = int(input("Enter the year : "))
 month = int(input("Enter the month : "))
 
 
-print(f"list of staurday in {month} {year} :",list_of_saturday(year, month))
+print(f"list of staurday in {month}/{year} :",list_of_saturday(year, month))
