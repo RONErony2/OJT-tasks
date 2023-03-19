@@ -30,11 +30,11 @@ driver.maximize_window()
 
 driver.find_element(By.XPATH, "//a[@id='nav-link-accountList']").click()
 
-driver.find_element(By.CSS_SELECTOR, "input[id='ap_email']").send_keys("jc.cgs.999@gmail.com")
+driver.find_element(By.CSS_SELECTOR, "input[id='ap_email']").send_keys("********")
 
 driver.find_element(By.CSS_SELECTOR, "input[id='continue']").click()
 
-driver.find_element(By.CSS_SELECTOR, "input[id='ap_password']").send_keys("SjcAmazonCgs@999")
+driver.find_element(By.CSS_SELECTOR, "input[id='ap_password']").send_keys("*******")
 
 driver.find_element(By.CSS_SELECTOR, "input[id='signInSubmit']").click()
 
