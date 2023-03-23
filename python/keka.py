@@ -4,6 +4,7 @@
 # alignment missing patterns
 
 from datetime import datetime
+import time
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -23,18 +24,19 @@ driver.get("https://app.keka.com/Account/Login")
 
 driver.maximize_window()
 
-driver.find_element(By.XPATH, "//input[@id='email']").send_keys("********")
+driver.find_element(By.XPATH, "//input[@id='email']").send_keys("schandra@msystechnologies.com")
 
 driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
 driver.find_elements(By.XPATH, "//div/button")[1].click()
 
-driver.find_element(By.CSS_SELECTOR, "input[type='password']").send_keys("******")
+driver.find_element(By.CSS_SELECTOR, "input[type='password']").send_keys("SjcKekaCgs@999")
 
 driver.find_element(By.XPATH, "//button[text()='Login']").click()
 
 driver.find_element(By.XPATH, "//ul/li/a[@href='/#/me/leave']").click()
 
+time.sleep(2)
 driver.find_element(By.XPATH, "//ul/li/a[@routerlink='attendance']").click()
 
 driver.find_element(By.XPATH, "//div/a[text()='Work From Home']").click()

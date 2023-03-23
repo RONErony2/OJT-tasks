@@ -10,6 +10,10 @@ def combine_lists(list1, list2):
     # list = list1 + list2
     # return list
 
+    # 3rd approach
+    # list1.extend(list2)
+    # return list1
+
 list1 = [int(i) for i in input("Enter the list elements : ").split()]
 list2 = [int(i) for i in input("Enter the list elements : ").split()]
 

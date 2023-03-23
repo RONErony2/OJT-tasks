@@ -21,7 +21,7 @@ print(dict1)
 sal = dict1['Salary']
 sal = int(sal + (sal*(10/100)))
 
-print(f"Slary before increment : {dict1['Salary']}")
+print(f"Salary before increment : {dict1['Salary']}")
 dict1['Salary'] = sal
 print(f"Slary after increment : {dict1['Salary']}")
 
@@ -29,7 +29,7 @@ print(f"Slary after increment : {dict1['Salary']}")
 dict1['age'] = 35
 print(dict1)
 
-# d. extract & print all the values & keys separetly in tuple.
+# d. extract & print all the values & keys separately in tuple.
 print("Keys : ",tuple(dict1.keys()))
 print("Values : ",tuple(dict1.values()))
 

@@ -4,7 +4,7 @@
 #     Input: [1,2,3,4,5,6,7,8] function: swap_element(arg1, arg2)
 
 
-list1 = [int(i) for i in input().split()]
+list1 = [int(i) for i in input("Enter the space separated list elements : ").split()]
 
 pos1 = int(input("Enter the position 1 : "))
 
@@ -23,7 +23,8 @@ print(f"Before swap : {list1}")
 
 list1 = swap_element(list1, (pos1, pos2))
 
-print(f"After swap : {list1}")
+if list1 != None:
+    print(f"After swap : {list1}")
 
 
 

@@ -12,9 +12,9 @@ def extract_string_startswith_lowercase(list_):
             res.append(string)
     return res
 
-list_ = [s for s in input().split()]
+list_ = [s for s in input("Enter the space separated list elements : ").split()]
 print(extract_string_startswith_lowercase(list_))
 
 #2nd approach
-# lowercase_words = [word for word in list_ if word[0].islower()]
-# print(lowercase_words)
+lowercase_words = [word for word in list_ if word[0].islower()]
+print(lowercase_words)

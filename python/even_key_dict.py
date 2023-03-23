@@ -2,7 +2,7 @@
 #     will be the occurrence of that element in the list. input= [1,2,3,2,4,2,4,7,8,4,5,8,6,9,2] 
 from collections import defaultdict
 
-list1 = [int(i) for i in input().split()]
+list1 = [int(i) for i in input("Enter the space separated list elements : ").split()]
 
 # 1st approach : Using dictionary comprehension.
 unique_ele = set(list1)

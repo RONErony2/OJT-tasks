@@ -15,8 +15,8 @@ for char in string:
 print(res)
 
 # 2nd approach
-# lower_count = sum([1 for char in string if char.islower()])
-# upper_count = sum([1 for char in string if char.isupper()])
+lower_count = sum([1 for char in string if char.islower()])
+upper_count = sum([1 for char in string if char.isupper()])
 
-# print("Number of lowercase letters:", lower_count)
-# print("Number of uppercase letters:", upper_count)
+print("Number of lowercase letters:", lower_count)
+print("Number of uppercase letters:", upper_count)

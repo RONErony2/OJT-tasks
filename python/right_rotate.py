@@ -4,7 +4,7 @@
 #      Expected output: [50, 60, 70, 10, 20, 30, 40] .
 
 
-list1 = [int(i) for i in input().split()]
+list1 = [int(i) for i in input("Enter the space separated list elements : ").split()]
 
 position = int(input("Enter position to rotate list item: "))
 
