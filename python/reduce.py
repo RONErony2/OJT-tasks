@@ -8,7 +8,7 @@
 import functools as f
 
 L1 = ['a', 'b', 'c', 'd']
-L2 = [1, 2, 3, 4]
+L2 = [1, 2, 30, 4]
 
 # print(zip(L1, L2))
 

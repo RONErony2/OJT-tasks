@@ -9,6 +9,8 @@
 #   212
 #    1
 
+# 1st approach
+
 def rohmbus_pattern(num):
     temp = 0
     for i in range(1,num*2):
@@ -34,3 +36,33 @@ def rohmbus_pattern(num):
 
 num = int(input("Enter the number : "))
 rohmbus_pattern(num)
+
+# 2nd approach
+
+
+def print_rhombus(n):
+    # upper half of rhombus
+    for i in range(1, n+1):
+        # print spaces before numbers
+        print(" "*(n-i), end="")
+        # print numbers in decreasing order
+        for j in range(i, 0, -1):
+            print(j, end="")
+        # print numbers in increasing order
+        for j in range(2, i+1):
+            print(j, end="")
+        print()
+    # lower half of rhombus
+    for i in range(n-1, 0, -1):
+        # print spaces before numbers
+        print(" "*(n-i), end="")
+        # print numbers in decreasing order
+        for j in range(i, 0, -1):
+            print(j, end="")
+        # print numbers in increasing order
+        for j in range(2, i+1):
+            print(j, end="")
+        print()
+
+# example usage with n=4
+print_rhombus(5)

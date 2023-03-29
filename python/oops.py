@@ -9,10 +9,20 @@
 
 # 2
 
+#1st approach
 class Row:
     def __init__(self,**kwargs):
         for k,v in kwargs.items():
             setattr(self, k, v)
+
+row = Row(a=10, b=20, c='suhas')
+
+print(row.a)
+
+# 2nd approach
+class Row:
+    def __init__(self,**kwargs):
+        self.__dict__.update(kwargs)
 
 row = Row(a=10, b=20, c='suhas')
 

@@ -35,4 +35,38 @@
 #     print(c)
 # print(count)
 
-print(list(filter(lambda a : a%2 != 0, [1,2,3,4,5,6,7,8,9])))
+# print(list(filter(lambda a : a%2 != 0, [1,2,3,4,5,6,7,8,9])))
+ 
+# class CustomForLoop:
+#     def __init__(self, items):
+#         self.items = items
+#         self.index = 0
+    
+#     def __iter__(self):
+#         return self
+    
+#     def __next__(self):
+#         if self.index >= len(self.items):
+#             raise StopIteration
+#         item = self.items[self.index] * 2
+#         self.index += 1
+#         return item
+
+# numbers = [1, 2, 3, 4, 5]
+# for item in CustomForLoop(numbers):
+#     print(item)
+
+
+# n = '912319'
+
+# res = '0'
+
+# for i in range(len(n)):
+#     val = n[:i]+n[i+1:]
+#     if val > res:
+#         res = val
+
+# print(res)
+
+
+

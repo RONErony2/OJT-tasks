@@ -2,6 +2,9 @@
 # is an iterator. 
 # >>> is_iterator(iter([])) True 
 # >>> is_iterator([1, 2]) False
+
+# 1st approach
+
 from practice2 import count
 
 
@@ -18,3 +21,13 @@ print(is_iterator(iter('suhas')))
 
 obj = count()
 print(is_iterator(obj))
+
+# 2nd approch
+
+def is_iterator(iterable):
+    return isinstance(iterable, (type(iter([])), type(iter(''))))
+
+print(is_iterator(iter([])))
+print(is_iterator([1,2,3]))
+print(is_iterator('suhas'))
+print(is_iterator(iter('suhas')))

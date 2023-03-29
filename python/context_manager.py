@@ -22,7 +22,6 @@
 
 # Traceback (most recent call last):
 # File "<stdin>", line 3, in <module>
-import traceback
 
 class suppress:
     def __init__(self, exception_type):
@@ -33,8 +32,6 @@ class suppress:
     
     def __exit__(self, exc_type, exc_value, traceback_obj):
         if exc_type == self.exception_type:
-            print(f"Oops, there was a ValueError: {exc_value}")
-            traceback.print_tb(traceback_obj)
             return True
         else:
             return False

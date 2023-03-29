@@ -1,0 +1,8 @@
+https://m
+http s://m
+https://www.example.com/path/to/file.html?arg1=value1&arg2=value2#fragment
+https://en.wikipedia.org/wiki/URL#Syntax
+https://www.google.com/search?q=url+encoding&oq=url+encoding&aqs=chrome.0.0i355j0i512l8.1313j1j7&sourceid=chrome&ie=UTF-8
+https://www.example.com
+https://www.github.com
+https://www.linkedin.com
